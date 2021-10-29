@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+/* Common CSS */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background-color: #faf9f6;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Triangles */
+.triangle {
+   width: 100%; 
+   height: 100%; 
+   position: absolute;
+   -moz-border-radius: 30px; 
+   -webkit-border-radius: 30px; 
+   border-radius: 30px;
+}
+
+.triangle:first-of-type {
+    top: -60%;
+    left: -60%;
+    transform: rotate(250deg);
+    transform: skew(20deg, 2deg);
+    background: linear-gradient(
+        rgb(255, 172, 28, .7),
+        rgb(255, 172, 28, .7)
+    ),
+    url('./assets/clouds.jpg');
+}
+
+.triangle:last-of-type {
+    top: 80%;
+    left: 60%;
+    transform: rotate(-20deg);
+    transform: skew(2deg, 20deg);
+    background: linear-gradient(
+        rgb(255,255,102, .7),
+        rgb(255,255,102, .7)
+    ),
+    url('./assets/clouds.jpg');
+}
+
+
